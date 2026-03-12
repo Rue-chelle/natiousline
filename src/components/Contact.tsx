@@ -14,9 +14,9 @@ const Contact = () => (
       <div className="grid md:grid-cols-2 gap-12 mt-12 max-w-4xl mx-auto">
         <div className="space-y-6">
           {[
-            { icon: Phone, label: "Phone", value: "+27 XX XXX XXXX" },
-            { icon: Mail, label: "Email", value: "info@natiousline.co.za" },
-            { icon: MapPin, label: "Location", value: "South Africa" },
+            { icon: Phone, label: "Phone", value: "+26378 342 0554" },
+            { icon: Mail, label: "Email", value: "info@natiousline.co.zw" },
+            { icon: MapPin, label: "Location", value: "No9 Athol Flats Ground floor Corner 10 ave and fort street" },
           ].map((c) => (
             <div key={c.label} className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
