@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const Hero = () => (
   <section id="home" className="relative min-h-[90vh] flex items-center pt-16">
     <div className="absolute inset-0">
-      <img src={heroImg} alt="Print shop" className="w-full h-full object-cover" />
+      <img src={heroImg} alt="Print shop" className="w-full h-full object-cover" fetchPriority="high" width={1615} height={1024} />
       <div className="absolute inset-0 bg-foreground/70" />
     </div>
     <div className="container relative z-10 py-20">
