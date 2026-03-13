@@ -72,6 +72,9 @@ const Services = () => {
                         alt={`${s.title} sample ${i + 1}`}
                         className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                         loading="lazy"
+                        width={175}
+                        height={175}
+                        decoding="async"
                       />
                     </button>
                   ))}
