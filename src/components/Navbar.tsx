@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b">
       <div className="container flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="Natiousline Investments" className="h-10 w-10 object-contain" />
+          <img src={logo} alt="Natiousline Investments" className="h-10 w-10 object-contain" width={40} height={40} decoding="async" />
           <span className="font-heading font-bold text-lg text-foreground">Natiousline</span>
         </a>
 

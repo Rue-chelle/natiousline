@@ -4,7 +4,7 @@ const About = () => (
   <section id="about" className="py-20">
     <div className="container flex flex-col md:flex-row items-center gap-12">
       <div className="flex-shrink-0">
-        <img src={logo} alt="Natiousline Investments" className="w-48 h-48 object-contain" />
+        <img src={logo} alt="Natiousline Investments" className="w-48 h-48 object-contain" width={192} height={192} loading="lazy" decoding="async" />
       </div>
       <div>
         <h2 className="text-3xl md:text-4xl font-bold font-heading">
