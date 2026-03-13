@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
+const WA_QUOTE_URL = "https://wa.me/263783420554?text=" + encodeURIComponent("Hi, I'd like to get a quote");
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -22,7 +24,9 @@ const Navbar = () => {
               {l}
             </a>
           ))}
-          <Button size="sm">Get a Quote</Button>
+          <a href={WA_QUOTE_URL} target="_blank" rel="noopener noreferrer">
+            <Button size="sm">Get a Quote</Button>
+          </a>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -38,7 +42,9 @@ const Navbar = () => {
             </a>
           ))}
           <div className="px-6 pt-2">
-            <Button size="sm" className="w-full">Get a Quote</Button>
+            <a href={WA_QUOTE_URL} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className="w-full">Get a Quote</Button>
+            </a>
           </div>
         </div>
       )}

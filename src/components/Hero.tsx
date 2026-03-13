@@ -1,6 +1,8 @@
 import heroImg from "@/assets/hero-print.jpg";
 import { Button } from "@/components/ui/button";
 
+const WA_URL = "https://wa.me/263783420554";
+
 const Hero = () => (
   <section id="home" className="relative min-h-[90vh] flex items-center pt-16">
     <div className="absolute inset-0">
@@ -16,10 +18,14 @@ const Hero = () => (
           Professional printing services for business cards, banners, t-shirts, stickers, and more. Quality you can trust.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
-          <Button size="lg">Our Services</Button>
-          <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-            Contact Us
-          </Button>
+          <a href="#services">
+            <Button size="lg">Our Services</Button>
+          </a>
+          <a href={`${WA_URL}?text=${encodeURIComponent("Hi, I'd like to inquire about your services")}`} target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              Contact Us
+            </Button>
+          </a>
         </div>
       </div>
     </div>
