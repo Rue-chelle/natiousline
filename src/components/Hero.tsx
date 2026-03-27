@@ -22,7 +22,7 @@ const Hero = () => (
             <Button size="lg">Our Services</Button>
           </a>
           <a href={`${WA_URL}?text=${encodeURIComponent("Hi, I'd like to inquire about your services")}`} target="_blank" rel="noopener noreferrer">
-            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg">
               Contact Us
             </Button>
           </a>
